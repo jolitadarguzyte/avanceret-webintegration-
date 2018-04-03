@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/oopgallery.css">
+	<link rel="stylesheet" href="/public/index.css">
+	<title>Opgave</title>
+</head>
+
+<body>
+<h1>Gallery</h1>
+
+	
+<form>
+	<select id="mySelect">
+	  
+	  <option id="natur">Natur</option>
+	  <option id="flower">Flower</option>
+	  <option id="animals">Animals</option>
+	</select>
+  </form>
+  
+  <p> Du må vælge kategori ved at klikke på knappen</p>
+  
+  <button onclick="myFunction()">Vælg</button>
+  
+  <p id="demo"></p>
+  
+  <script>
+  function myFunction() {
+	  var x = document.getElementById("mySelect") = 0>2;
+	  document.getElementById("demo").innerHTML = x;
+  }
+  </script>
+	
+
+	<div id="all-galleries">
+
+		<div id="gallery01" class="oopgallery-container">
+			<img class="oopgallery-image" src="">
+			<div class="oopgallery-controls">
+					<span class="oopgallery-control-wrap">wrap</span>
+				<button class="oopgallery-control-first" title="First">&lt;&lt;</button>
+				<button class="oopgallery-control-previous" title="Previous">&lt;</button>
+				<span class="oopgallery-image-number">3 / 4</span>
+				<button class="oopgallery-control-next" title="Next">&gt;</button>
+				<button class="oopgallery-control-last" title="Last">&gt;&gt;</button>
+			</div>
+		</div>
+
+		<div id="gallery02" class="oopgallery-container">
+			<img class="oopgallery-image" src="">
+			<div class="oopgallery-controls">
+				<span class="oopgallery-control-wrap">wrap</span>
+				<button class="oopgallery-control-first" title="First">&lt;&lt;</button>
+				<button class="oopgallery-control-previous" title="Previous">&lt;</button>
+				<span class="oopgallery-image-number">3 / 4</span>
+				<button class="oopgallery-control-next" title="Next">&gt;</button>
+				<button class="oopgallery-control-last" title="Last">&gt;&gt;</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="./js/oop_gallery.js"></script>
+	<script src="./js/page.js"></script>
+
+</body>
+
+</html>
